@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mastering Interactive Web Pages</h1>
+    </header>
 
+    <main>
+        <section class="section-card">
+            <h2>Part 1: Event Handling Demo</h2>
+            <div class="event-demo">
+                <button id="alertButton">Click Me!</button>
+                <p id="hoverMessage">Hover over this text!</p>
+                <input type="text" id="keyboardInput" placeholder="Type something here">
+                <p id="keyboardMessage">Your last key press: <span id="lastPressedKey"></span></p>
+            </div>
+        </section>
+
+        <section class="section-card">
+            <h2>Part 2: Interactive Elements</h2>
+            
+            <div class="interactive-feature">
+                <h3>Light/Dark Mode</h3>
+                <button id="themeToggle">Toggle Theme</button>
+            </div>
+            
+            <div class="interactive-feature">
+                <h3>Simple Counter</h3>
+                <p>Current Count: <span id="counterDisplay">0</span></p>
+                <button id="incrementButton">Increment</button>
+                <button id="decrementButton">Decrement</button>
+            </div>
+
+            <div class="interactive-feature">
+                <h3>Collapsible FAQ</h3>
+                <div class="faq-item">
+                    <h4 class="faq-question">What is JavaScript?</h4>
+                    <p class="faq-answer">JavaScript is a programming language used to make web pages interactive.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">What is the DOM?</h4>
+                    <p class="faq-answer">The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-card">
+            <h2>Part 3: Custom Form Validation</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name">
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="passwordConfirm">Confirm Password:</label>
+                    <input type="password" id="passwordConfirm" name="passwordConfirm">
+                    <span class="error-message" id="passwordConfirmError"></span>
+                </div>
+                <button type="submit">Submit</button>
+                <p id="successMessage" class="success-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

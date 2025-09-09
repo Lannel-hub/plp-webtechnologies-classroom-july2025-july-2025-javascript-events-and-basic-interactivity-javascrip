@@ -1,1 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    transition: background-color 0.5s, color 0.5s;
+}
 
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+body.dark-mode .section-card {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+body.dark-mode h2 {
+    color: #3498db;
+    border-color: #3498db;
+}
+
+.event-demo, .interactive-feature {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+}
+
+#hoverMessage {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#hoverMessage.active {
+    color: #28a745;
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* FAQ styles */
+.faq-question {
+    cursor: pointer;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.faq-question:hover {
+    background-color: #e2e2e2;
+}
+
+body.dark-mode .faq-question {
+    background-color: #333;
+    color: #eee;
+}
+
+body.dark-mode .faq-question:hover {
+    background-color: #444;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    border-left: 3px solid #007bff;
+    margin-left: 10px;
+}
+
+.faq-answer.active {
+    display: block;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect total width */
+}
+
+input.error {
+    border-color: #dc3545;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 5px;
+}
+
+.success-message {
+    color: #28a745;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
